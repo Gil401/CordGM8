@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gym</title>
+
+    <!-- Gym references -->
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="scripts/index.js"></script>
+    <script src="scripts/NFC_Handler.js"></script>
+    <script src="scripts/BT_Handler.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page" id="main-page" data-theme="d" data-url="demo-page">
+    <div data-role="header" data-theme="c">
+        <h1>Gym8</h1>
+        <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+    </div><!-- /header -->
+    <div data-role="content">
+        <div class="article">
+            <h1>This is a NFC test app</h1>
+            <button id="ChangeColorBTN">Change Color</button>
+            <p id="deviceProperties">Loading device properties...</p><br />
+            <button id="enableBT">Enable Bluetooth</button><br />
+            <button id="checkBT">Check Bluetooth Status</button><br />
+            <p id="status">Loading bluetooth information...</p>
+
+        </div><!-- /article -->
+    </div><!-- /content -->
+    <div data-role="panel" id="left-panel" data-theme="c">
+        <ul data-role="listview" data-theme="d">
+            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+            <li data-role="list-divider">Menu</li>
+            <li data-icon="back"><a href="#demo-intro" data-rel="back">Demo intro</a></li>
+        </ul>
+        <div data-role="collapsible" data-inset="false" data-iconpos="right" data-theme="d" data-content-theme="d">
+            <h3>Categories</h3>
+            <div data-role="collapsible-set" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="d">
+                <div data-role="collapsible">
+                    <h3>Analytics</h3>
+                    <ul data-role="listview">
+                        <li><a href="#">Road</a></li>
+                        <li><a href="#">ATB</a></li>
+                        <li><a href="#">Fixed Gear</a></li>
+                        <li><a href="#">Cruiser</a></li>
+                    </ul>
+                </div><!-- /collapsible -->
+            </div><!-- /collapsible-set -->
+        </div><!-- /collapsible -->
+    </div><!-- /panel -->
+        </div>
+<!-- Cordova reference, this is added to your app when it's built. -->
+<script src="cordova.js"></script>
+<script src="scripts/platformOverrides.js"></script>
+</body>
+</html>
